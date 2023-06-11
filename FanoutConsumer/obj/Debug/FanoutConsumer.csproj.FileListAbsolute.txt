@@ -1,0 +1,13 @@
+C:\Users\mido\source\repos\RabbitMQ-Exmaples\FanoutConsumer\bin\Debug\FanoutConsumer.exe.config
+C:\Users\mido\source\repos\RabbitMQ-Exmaples\FanoutConsumer\bin\Debug\FanoutConsumer.exe
+C:\Users\mido\source\repos\RabbitMQ-Exmaples\FanoutConsumer\bin\Debug\FanoutConsumer.pdb
+C:\Users\mido\source\repos\RabbitMQ-Exmaples\FanoutConsumer\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\mido\source\repos\RabbitMQ-Exmaples\FanoutConsumer\bin\Debug\RabbitMQ.Client.dll
+C:\Users\mido\source\repos\RabbitMQ-Exmaples\FanoutConsumer\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Users\mido\source\repos\RabbitMQ-Exmaples\FanoutConsumer\bin\Debug\RabbitMQ.Client.xml
+C:\Users\mido\source\repos\RabbitMQ-Exmaples\FanoutConsumer\obj\Debug\FanoutConsumer.csproj.AssemblyReference.cache
+C:\Users\mido\source\repos\RabbitMQ-Exmaples\FanoutConsumer\obj\Debug\FanoutConsumer.csproj.SuggestedBindingRedirects.cache
+C:\Users\mido\source\repos\RabbitMQ-Exmaples\FanoutConsumer\obj\Debug\FanoutConsumer.csproj.CoreCompileInputs.cache
+C:\Users\mido\source\repos\RabbitMQ-Exmaples\FanoutConsumer\obj\Debug\FanoutConsumer.csproj.CopyComplete
+C:\Users\mido\source\repos\RabbitMQ-Exmaples\FanoutConsumer\obj\Debug\FanoutConsumer.exe
+C:\Users\mido\source\repos\RabbitMQ-Exmaples\FanoutConsumer\obj\Debug\FanoutConsumer.pdb
