@@ -24,27 +24,28 @@ namespace FanoutPublisher
             conn = factory.CreateConnection();
             channel = conn.CreateModel();
 
+            //create exchange 
             channel.ExchangeDeclare(
                 "ex.fanout",
                 "fanout",
                 true,
                 false,
                 null);
-
+            //declare queue 1
             channel.QueueDeclare(
                 "my.queue1",
                 true,
                 false,
                 false,
                 null);
-
+            //declare queue 2
             channel.QueueDeclare(
                 "my.queue2",
                 true,
                 false,
                 false,
                 null);
-
+            //bind this queues
             channel.QueueBind("my.queue1", "ex.fanout", "");
             channel.QueueBind("my.queue2", "ex.fanout", "");
 
@@ -55,6 +56,7 @@ namespace FanoutPublisher
                 Encoding.UTF8.GetBytes("Message 1")
                 );
 
+          
             channel.BasicPublish(
                 "ex.fanout",
                 "",
