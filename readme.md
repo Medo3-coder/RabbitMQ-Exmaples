@@ -31,3 +31,10 @@
        4. The PDF processing worker (the consumer) receives the task message and starts processing the PDF.
 
 
+## EXCHANGES
+  * Messages are not published directly to a queue; instead, the producer sends messages to an exchange. 
+  * An exchange is responsible for routing the messages to different queues with the help of bindings and routing keys.
+  *  A binding is a link between a queue and an exchange.
+  
+
+
