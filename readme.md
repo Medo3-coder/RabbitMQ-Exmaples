@@ -49,10 +49,10 @@
   
 <img src="/images/exchanges-topic-fanout-direct.png?raw=true" alt="exchanges-topic-fanout-direct">
 
- * Direct : The message is routed to the queues whose binding key exactly matches the routing key of the message. For example, if the queue is bound to the exchange with the binding key pdfprocess, a message published to the exchange with a routing key pdfprocess is routed to that queue.
- * Fanout : A fanout exchange routes messages to all of the queues bound to it. 
- * Topic : The topic exchange does a wildcard match between the routing key and the routing pattern specified in the binding. 
- * Headers : Headers exchanges use the message header attributes for routing. 
+ * **Direct** : The message is routed to the queues whose binding key exactly matches the routing key of the message. For example, if the queue is bound to the exchange with the binding key pdfprocess, a message published to the exchange with a routing key pdfprocess is routed to that queue.
+ * **Fanout** : A fanout exchange routes messages to all of the queues bound to it. 
+ * **Topic** : The topic exchange does a wildcard match between the routing key and the routing pattern specified in the binding. 
+ * **Headers** : Headers exchanges use the message header attributes for routing. 
 
  
  
