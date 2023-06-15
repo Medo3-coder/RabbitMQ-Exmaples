@@ -38,12 +38,22 @@
 
 <img src="/images/exchanges-bidings-routing-keys.png?raw=true" alt="exchanges-bidings-routing-keys">
 
-## Message flow in RabbitMQ 
- 1. The producer publishes a message to an exchange. When creating an exchange, the type must be specified. This topic will be covered later on.
- 2. The exchange receives the message and is now responsible for routing the message. The exchange takes different message attributes into account, such as the routing key, depending on the exchange type.
- 3. Bindings must be created from the exchange to queues. In this case, there are two bindings to two different queues from the exchange. The exchange routes the message into the queues depending on message attributes
+## Standard RabbitMQ message flow
+ 1. The producer publishes a message to the exchange.
+ 2. The exchange receives the message and is now responsible for the routing of the message.
+ 3. Binding must be set up between the queue and the exchange. In this case, we have bindings to two different queues from the exchange. The exchange routes the message into the queues.
  4. The messages stay in the queue until they are handled by a consumer
  5. The consumer handles the message
+
+## TYPES OF EXCHANGES
+  
+<img src="/images/exchanges-topic-fanout-direct.png?raw=true" alt="exchanges-topic-fanout-direct">
+
+ * Direct : The message is routed to the queues whose binding key exactly matches the routing key of the message. For example, if the queue is bound to the exchange with the binding key pdfprocess, a message published to the exchange with a routing key pdfprocess is routed to that queue.
+ * Fanout : A fanout exchange routes messages to all of the queues bound to it. 
+ * Topic : The topic exchange does a wildcard match between the routing key and the routing pattern specified in the binding. 
+ * Headers : Headers exchanges use the message header attributes for routing. 
+
  
  
   
