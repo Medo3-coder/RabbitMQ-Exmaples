@@ -34,7 +34,9 @@
 ## EXCHANGES
   * Messages are not published directly to a queue; instead, the producer sends messages to an exchange. 
   * An exchange is responsible for routing the messages to different queues with the help of bindings and routing keys.
-  *  A binding is a link between a queue and an exchange.
+  * A binding is a link between a queue and an exchange.
+
+<img src="/images/exchanges-bidings-routing-keys.png?raw=true" alt="exchanges-bidings-routing-keys">
   
 
 
