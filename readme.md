@@ -40,10 +40,10 @@
 
 ## Message flow in RabbitMQ 
  1. The producer publishes a message to an exchange. When creating an exchange, the type must be specified. This topic will be covered later on.
- * The exchange receives the message and is now responsible for routing the message. The exchange takes different message attributes into account, such as the routing key, depending on the exchange type.
- * Bindings must be created from the exchange to queues. In this case, there are two bindings to two different queues from the exchange. The exchange routes the message into the queues depending on message attributes
- * The messages stay in the queue until they are handled by a consumer
- * The consumer handles the message
+ 2. The exchange receives the message and is now responsible for routing the message. The exchange takes different message attributes into account, such as the routing key, depending on the exchange type.
+ 3. Bindings must be created from the exchange to queues. In this case, there are two bindings to two different queues from the exchange. The exchange routes the message into the queues depending on message attributes
+ 4. The messages stay in the queue until they are handled by a consumer
+ 5. The consumer handles the message
  
  
   
