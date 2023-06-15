@@ -37,6 +37,15 @@
   * A binding is a link between a queue and an exchange.
 
 <img src="/images/exchanges-bidings-routing-keys.png?raw=true" alt="exchanges-bidings-routing-keys">
+
+## Message flow in RabbitMQ 
+ * The producer publishes a message to an exchange. When creating an exchange, the type must be specified. This topic will be covered later on.
+ * The exchange receives the message and is now responsible for routing the message. The exchange takes different message attributes into account, such as the routing key, depending on the exchange type.
+ * Bindings must be created from the exchange to queues. In this case, there are two bindings to two different queues from the exchange. The exchange routes the message into the queues depending on message attributes
+ * The messages stay in the queue until they are handled by a consumer
+ * The consumer handles the message
+ 
+ 
   
 
 
