@@ -21,6 +21,7 @@
       The consumer takes a message off the queue and starts processing the PDF. At the same time, the producer is queueing up new messages. The consumer can be on       a totally different server than the producer or they can be located on the same server. The request can be created in one programming language and handled         in another programming language. The point is, the two applications will only communicate through the messages they are sending to each other, which means         the sender and receiver have low coupling.
       </br>
       <img src="/images/rabbitmq-beginners-updated.png" alt="rabbitmq-beginners-updated" width="900">
+      </br>
        * The user sends a PDF creation request to the web application.
        * The web application (the producer) sends a message to RabbitMQ that includes data from the request such as name and email.
        * An exchange accepts the messages from the producer and routes them to correct message queues for PDF creation.
