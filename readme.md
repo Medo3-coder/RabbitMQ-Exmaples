@@ -22,9 +22,9 @@
       </br>
       <img src="/images/rabbitmq-beginners-updated.png" alt="rabbitmq-beginners-updated" width="900">
       </br>
-      > The user sends a PDF creation request to the web application.
-      > The web application (the producer) sends a message to RabbitMQ that includes data from the request such as name and email.
-      > An exchange accepts the messages from the producer and routes them to correct message queues for PDF creation.
-      > The PDF processing worker (the consumer) receives the task message and starts processing the PDF.
+     1. The user sends a PDF creation request to the web application.
+     2. The web application (the producer) sends a message to RabbitMQ that includes data from the request such as name and email.
+     3. An exchange accepts the messages from the producer and routes them to correct message queues for PDF creation.
+     4. The PDF processing worker (the consumer) receives the task message and starts processing the PDF.
 
 
