@@ -10,11 +10,14 @@
    
    ## RabbitMQ Example
   
-    * A message broker acts as a middleman for various services (e.g. a web application, as in this example). They can be used to reduce loads and delivery times of       web application servers by delegating tasks that would normally take up a lot of time or resources to a third party that has no other job.
-      In this guide, we follow a scenario where a web application allows users to upload information to a website. The site will handle this information, generate a       PDF, and email it back to the user. Handling the information, generating the PDF, and sending the email will, in this example case, take several seconds. That       is one of the reasons why a message queue will be used to perform the task.
-      When the user has entered user information into the web interface, the web application will create a "PDF processing" message that includes all of the               important information the user needs into a message and place it onto a queue defined in RabbitMQ.
+    * A message broker acts as a middleman for various services (e.g. a web application, as in this example). They can be used to reduce loads and delivery times       of web application servers by delegating tasks that would normally take up a lot of time or resources to a third party that has no other job.
+      In this guide, we follow a scenario where a web application allows users to upload information to a website. The site will handle this information, generate       a PDF, and email it back to the user. Handling the information, generating the PDF, and sending the email will, in this example case, take several seconds.       That is one of the reasons why a message queue will be used to perform the task.
+      When the user has entered user information into the web interface, the web application will create a "PDF processing" message that includes all of the             important information the user needs into a message and place it onto a queue defined in RabbitMQ.
       
       <img src="/images/workflow-rabbitmq.png?raw=true" alt="workflow-rabbitmq">
- 
+      
+    ## When and why should you use RabbitMQ?
+     * Message queueing allows web servers to respond to requests quickly instead of being forced to perform resource-heavy procedures on the spot that may delay       response time. Message queueing is also good when you want to distribute a message to multiple consumers or to balance loads between workers.
+      The consumer takes a message off the queue and starts processing the PDF. At the same time, the producer is queueing up new messages. The consumer can be on       a totally different server than the producer or they can be located on the same server. The request can be created in one programming language and handled         in another programming language. The point is, the two applications will only communicate through the messages they are sending to each other, which means         the sender and receiver have low coupling.
 
 
