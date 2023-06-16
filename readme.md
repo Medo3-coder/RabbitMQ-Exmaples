@@ -68,6 +68,12 @@
 * **Users**: It is possible to connect to RabbitMQ with a given username and password. Every user can be assigned permissions such as rights to read, write and configure privileges within the instance. Users can also be assigned permissions for specific virtual hosts.
 * **Vhost, virtual host**: Provides a way to segregate applications using the same RabbitMQ instance. Different users can have different permissions to different vhost *and queues and exchanges can be created, so they only exist in one vhost.
 
+
+## Exchange to exchange bindings in RabbitMQ
+  * It is possible to add bindings between exchanges in RabbitMQ. The exchange to exchange binding is useful when messages need to be saved for queues that are       automatically deleted, or when load balancing topics within a single broker. Additionally, when sending the same messages to different exchange types,             exchange to exchange binding is the best way forward.
+
+<img src="/images/exchange-to-exchange-binding.png?raw=true" alt="exchange-to-exchange-binding">
+
  
  
   
