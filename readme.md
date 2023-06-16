@@ -75,6 +75,17 @@
 <img src="/images/exchange-to-exchange-binding.png?raw=true" alt="exchange-to-exchange-binding">
 
  
+ ## Collecting Unroutable Messages in a RabbitMQ Alternate Exchange
+ 
+ * No matter how careful you are, mistakes can happen. For example, a client may accidentally or maliciously route messages using non-existent routing keys. To     avoid complications from lost information, collecting unroutable messages in a RabbitMQ alternate exchange is an easy, safe backup.
+
+ ## Avoid Data Loss with a RabbitMQ Alternate Exchange 
+  * RabbitMQ also lets you define an alternate exchange to apply logic to unroutable messages. Set an alternate exchange using policies or within arguments when      declaring an exchange.
+
+<img src="/images/rabbitmq-alternate-exchange.png?raw=true" alt="rabbitmq-alternate-exchange">
+
+
+ 
  
   
 
