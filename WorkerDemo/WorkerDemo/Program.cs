@@ -8,6 +8,8 @@ using RabbitMQ.Client.Events;
 
 namespace WorkerDemo
 {
+
+    // When they talk about workers, they mean applications that can consume from the same queue to process the tasks in parallel.
     internal class Program
     {
         static void Main(string[] args)
