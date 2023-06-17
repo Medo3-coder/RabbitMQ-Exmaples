@@ -84,6 +84,21 @@
 
 <img src="/images/rabbitmq-alternate-exchange.png?raw=true" alt="rabbitmq-alternate-exchange">
 
+## How to Optimize the RabbitMQ Prefetch Count
+ * Knowing how to tune your broker correctly brings the system up to speed without having to set up a larger cluster or doing a lot of updates in your client code. Understanding how to optimize the RabbitMQ prefetch count maximizes the speed of the system.
+
+# What is the RabbitMQ prefetch count?
+ * The short answer: The RabbitMQ prefetch value is used to specify how many messages are being sent at the same time.
+* Messages in RabbitMQ are pushed from the broker to the consumers. The RabbitMQ default prefetch setting gives clients an unlimited buffer, meaning that          RabbitMQ, by default, sends as many messages as it can to any consumer that appears ready to accept them. It is, therefore, possible to have more than one message "in flight" on a channel at any given moment.
+
+<img src="/images/prefetch-in-flight.png?raw=true" alt="prefetch-in-flight">
+
+* Messages are cached by the RabbitMQ client library (in the consumer) until processed. All pre-fetched messages are invisible to other consumers and are listed as unacked messages in the RabbitMQ management interface.
+An unlimited buffer of messages sent from the broker to the consumer could lead to a window of many unacknowledged messages. Prefetching in RabbitMQ simply allows you to set a limit of the number of unacked (not handled) messages.
+There are two prefetch options available, channel prefetch count and consumer prefetch count.
+
+
+
 
  
  
