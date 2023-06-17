@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Publisher",
+    "\\Publisher\\Publisher",
+    "\\Subscriber",
+    "\\Subscriber\\Subscriber"
+  ],
+  "SelectedNode": "\\Subscriber\\Subscriber\\Subscriber.csproj",
+  "PreviewInSolutionExplorer": false
+}
