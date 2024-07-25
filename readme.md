@@ -6,6 +6,10 @@
    have information about a process or task that should start on another application (which could even be on another server), 
    or it could be just a simple text message. The queue-manager software stores the messages until a receiving application connects and takes a message off the queue.
    The receiving application then processes the message
+
+*  What is RabbitMQ?
+   RabbitMQ is open source message broker software (sometimes called message-oriented middleware) that implements the Advanced Message Queuing Protocol (AMQP). The RabbitMQ      server is written in the Erlang programming language and is built on the Open Telecom Platform framework for clustering and failover. Client libraries to interface with 
+   the broker are available for all major programming languages.
    
    
    ## RabbitMQ Example
